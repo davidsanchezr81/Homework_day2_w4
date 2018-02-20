@@ -33,6 +33,33 @@ class Palindrome
 end
 
 
+class Isogram
+
+  def initialize(string1)
+
+    @string3 = string1
+
+  end
+
+  def isogram()
+    @string3.downcase!
+    ('a'..'z').each do |letter|
+      return "no" if @string3.count(letter) > 1
+    end
+    return "si"
+  end
+
+end
+
+# class Anagram
+#
+#   def initialize(string1, string2)
+#     @string4
+#
+#
+#   end
+#
+# end
 
 
- #end of the class
+#end of the class

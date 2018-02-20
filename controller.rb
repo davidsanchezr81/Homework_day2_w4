@@ -14,3 +14,9 @@ get '/palindrome/:string1' do
   @application = app.palindrome()
   erb(:result)
 end
+
+get '/isogram/:string1' do
+  app = Isogram.new(params[:string1])
+  @application = app.isogram()
+  erb(:result)
+end
