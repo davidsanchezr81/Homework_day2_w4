@@ -37,29 +37,34 @@ class Isogram
 
   def initialize(string1)
 
-    @string3 = string1
+    @string1 = string1
 
   end
 
   def isogram()
-    @string3.downcase!
+    @string1.downcase!
     ('a'..'z').each do |letter|
-      return "no" if @string3.count(letter) > 1
+      return "#{@string1} is not an Isogram" if @string1.count(letter) > 1
     end
-    return "si"
+    return "#{@string1} is  an Isogram"
   end
 
 end
 
-# class Anagram
-#
-#   def initialize(string1, string2)
-#     @string4
-#
-#
-#   end
-#
-# end
+class Anagram
 
+  def initialize(string4, string5)
+    @string1 = string4
+    @string2 = string5
+  end
+
+  def anagram()
+    if (@string4.chars - @string5.chars).length.zero
+      return "#{@string5} is an anagram"
+    else
+      "#{@string5} is not an anagram"
+    end
+  end
+end
 
 #end of the class

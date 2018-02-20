@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
+<style media="screen">
+
+div {
+width: 1240px;
+height: 70px;
+border: 10px solid green;
+padding: 20px;
+margin: 20px;
+background-color: red;
+-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+animation-name: example;
+animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+from {background-color: green;}
+to {background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example {
+from {background-color: red;}
+to {background-color: yellow;}
+}
+</style>
     <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="/style.css">
+    <title>STRINGS GAME</title>
   </head>
   <body>
+<div class="container">
+<h1>
+The Word's Game
+</h1>
 
+</div>
     <nav>
       <ul>
-        <li></li>
+
+
       </ul>
     </nav>
   <%= yield %>
